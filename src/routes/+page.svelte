@@ -853,7 +853,7 @@
   justify-content: flex-end;
 }
 .landing-page-text43 {
-  top: 903px;
+  top: 603px;
   left: 1139px;
   color: rgba(255, 255, 255, 1);
   width: 209px;
@@ -872,7 +872,7 @@
   text-decoration: UNDERLINE;
 }
 .landing-page-text46 {
-  top: 797px;
+  top: 600px;
   left: 86px;
   color: rgba(255, 255, 255, 1);
   width: 656px;
