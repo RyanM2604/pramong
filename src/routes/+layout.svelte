@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,5 +14,14 @@
       </div>
     </div>
 </nav>
+
+<style>
+    body {
+      /* Set a white gradient background */
+      background: linear-gradient(to bottom, #ffffff, transparent);
+      margin: 0; /* Remove default body margin */
+      padding-top: 56px; /* Adjusted based on the height of your fixed-top navbar */
+    }
+</style>
 
 <slot />
