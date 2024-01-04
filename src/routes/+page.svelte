@@ -238,7 +238,11 @@
   </div>
 
 <style>
-    .landing-page-container {
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.landing-page-container {
   width: 100%;
   display: flex;
   overflow: auto;
