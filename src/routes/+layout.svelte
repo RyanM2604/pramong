@@ -1,26 +1,37 @@
-<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="/about_us">About Us</a>
-          <a class="nav-link" href="/stories">Stories</a>
-          <a class="nav-link" href="/market">Marketplace</a>
-          <a class="nav-link" href="/data">Data</a>
+        <div class="navbar-nav mx-auto d-lg-flex align-items-center nav-fill w-100">
+          <a class="nav-link mr-auto" aria-current="page" href="/about_us" style="color: #5A7383;">About Us</a>
+          <a class="nav-link" href="/stories" style="color: #5A7383;">Stories</a>
+          <a class="navbar-brand" href="/">
+            <img src="/assets/logo.png" alt="Pramong" style="width: 100px">
+          </a>
+          <a class="nav-link" href="/market" style="color: #5A7383;">Marketplace</a>
+          <a class="nav-link ml-auto" href="/data" style="color: #5A7383;">Data</a>
         </div>
       </div>
     </div>
 </nav>
 
 <style>
-    body {
-      /* Set a white gradient background */
-      background: linear-gradient(to bottom, #ffffff, transparent);
-      margin: 0; /* Remove default body margin */
-      padding-top: 56px; /* Adjusted based on the height of your fixed-top navbar */
+    .custom-navbar {
+      padding-top: 50px; /* Adjust the top padding to change the navbar height */
+      padding-bottom: 50px; /* Adjust the bottom padding to change the navbar height */
+      background:transparent;
+      text-align: center;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }  
+
+    .navbar{
+      background:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     }
 </style>
 

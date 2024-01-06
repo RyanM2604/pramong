@@ -47,7 +47,7 @@
     }
 </script>
 
-<div class="container justify-content-center" style="margin-top: 100px">
+<div class="container justify-content-center" style="margin-top: 200px">
     {#each Array.from({ length: Math.ceil(products.length / 3) }) as _, i}
     <div class="row">
         {#each {length : 3} as _, j}
