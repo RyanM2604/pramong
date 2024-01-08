@@ -35,7 +35,9 @@
             </span>
           </span>
           <div class="stories-page-button">
-            <span class="stories-page-text04"><span>Read ➜</span></span>
+            <a href="#">
+              <span class="stories-page-text04"><span>Read ➜</span></span>
+            </a>
           </div>
         </div>
         <div class="stories-page-stories1">
@@ -52,7 +54,6 @@
             </span>
           </span>
           <span class="stories-page-text12"><span>Stories</span></span>
-          <span class="stories-page-text14"><span>The Ocean</span></span>
           <div class="stories-page-button1">
             <span class="stories-page-text16"><span>Read ➜</span></span>
           </div>

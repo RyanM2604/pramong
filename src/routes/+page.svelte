@@ -54,7 +54,9 @@
               src="/assets/rectangle41206-rffa-200h.png"
               class="landing-page-rectangle4"
             />
-            <span class="landing-page-text10"><span>Read ➜</span></span>
+            <a href="/stories">
+              <span class="landing-page-text10"><span>Read ➜</span></span>
+            </a>
           </button>
           <img
             alt="Fishbefore568"
@@ -167,7 +169,9 @@
           <span class="landing-page-text34">Certifications</span>
         </div>
         <div class="landing-page-button1">
-          <span class="landing-page-text35"><span>More ➜</span></span>
+          <a href="/data">
+            <span class="landing-page-text35"><span>More ➜</span></span>
+          </a>
         </div>
         <div class="landing-page-todays-catches">
           <img
@@ -192,8 +196,10 @@
           />
           <div class="landing-page-button2">
             <span class="landing-page-text37">
-              <span class="landing-page-text38">Visit the Marketplace</span>
-              <span>➜</span>
+              <a href="/market" style="color: white;">
+                <span class="landing-page-text38">Visit the Marketplace</span>
+                <span>➜</span>
+              </a>
             </span>
           </div>
           <div class="landing-page-title">
@@ -214,8 +220,10 @@
           <img alt="BG225" src="/assets/bg225-1duk-1100h.png" class="landing-page-bg" />
           <div class="landing-page-about"></div>
           <span class="landing-page-text43">
-            <span class="landing-page-text44">About Us</span>
-            <span>➜</span>
+            <a href="/about_us" style="color: white;">
+              <span class="landing-page-text44">About Us</span>
+              <span>➜</span>
+            </a>
           </span>
         </div>
         <span class="landing-page-text46">
