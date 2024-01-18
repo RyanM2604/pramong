@@ -1,5 +1,16 @@
+<script>
+  import { user } from "../../stores/user";
+
+  let currentUser = { name: null, email: null, userId: null };
+
+  // subscribe to the user store
+  user.subscribe(value => {
+      currentUser = value;
+  });
+</script>
+
+{#if currentUser.name && currentUser.email && currentUser.userId}
 <div>
-    <link href="./page.css" rel="stylesheet" />
     <div class="page-container">
       <div class="page-data">
         <img
@@ -39,6 +50,20 @@
       </div>
     </div>
   </div>
+{:else}
+<div style="margin-top: 200px">
+  <div class="container">
+      <div class="row justify-content-center align-items-center m-5">
+          <div class="col-md-6">
+              <div class="p-4 text-white bg-secondary rounded-md">
+                  <p class="text-center">You are not logged in.</p>
+                  <a href="/auth" class="d-block mt-2 text-center text-decoration-underline" style="color: white;">Click here to register or login.</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{/if}
 
 <style>
     .page-container {

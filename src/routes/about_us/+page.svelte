@@ -30,7 +30,7 @@
           <span class="about-us-text"><span>About Us</span></span>
           <span class="about-us-text002">
             <span class="about-us-text003">
-              <span>FishLink’s mission is to solve</span>
+              <span>Pramong’s mission is to solve</span>
               <br />
               <span></span>
             </span>
