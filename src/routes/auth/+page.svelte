@@ -1,5 +1,5 @@
 <script>
-    import { user } from '../../stores/user.js';
+    import { user } from '../../stores/user';
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
     

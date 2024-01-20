@@ -2,7 +2,7 @@
     import ProductCard from "$lib/productCard.svelte";
 	import { get } from "svelte/store";
 	import { Items } from "../../cart";
-    import { user } from '../../stores/user.js';
+    import { user } from '../../stores/user';
 
     const products : Product[] = [
         {

@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  import { user } from '../stores/user.js';
+  import { user } from '../stores/user';
 
   let currentUser = { name: null, email: null, userId: null};
 
