@@ -1,6 +1,7 @@
 import type { RequestHandler } from "@sveltejs/kit";
-import { SECRET_API_KEY } from "$lib/env.js";
 import Stripe from "stripe";
+
+const SECRET_API_KEY = process.env.SECRET_API_KEY
 
 const stripe = new Stripe(SECRET_API_KEY, {
     apiVersion: "2023-10-16",

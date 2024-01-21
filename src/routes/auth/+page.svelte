@@ -136,6 +136,7 @@
                     </div>
                     {#if isRegistering}
                     <div class="mb-3 w-100">
+                        <!-- svelte-ignore a11y-label-has-associated-control -->
                         <label class="form-label">I am a:</label>
                         <div class="form-check">
                             <input type="radio" id="fisherman" bind:group={userType} value="fisherman" class="form-check-input" required />

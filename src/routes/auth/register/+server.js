@@ -1,7 +1,9 @@
 import { json } from "@sveltejs/kit";
 import { error } from "@sveltejs/kit";
 import { createClient } from "@supabase/supabase-js";
-import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from "$lib/env.js";
+
+const PUBLIC_SUPABASE_URL = "https://dheyptucuuefycegyeqx.supabase.co"
+const PUBLIC_SUPABASE_ANON_KEY = process.env.PUBLIC_SUPABASE_ANON_KEY
 
 const supabase = createClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY);
 
