@@ -4,6 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 const PUBLIC_SUPABASE_URL = "https://dheyptucuuefycegyeqx.supabase.co"
 const PUBLIC_SUPABASE_ANON_KEY = process.env.PUBLIC_SUPABASE_ANON_KEY
 
+// @ts-ignore
 const supabase = createClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY);
 
 /** @type {import('./$types').RequestHandler} */

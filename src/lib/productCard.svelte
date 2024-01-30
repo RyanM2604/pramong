@@ -16,7 +16,7 @@
 </script>
 
 <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src={product.photo_url} class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{product.name}</h5>
       <h6 class="card-title">{product.price}</h6>

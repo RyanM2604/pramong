@@ -12,7 +12,7 @@ export async function POST({ request }) {
   const { name, email, password, userType } = await request.json();
 
   try {
-    // console.log(name, email, password, userType);
+    //console.log(name, email, password, userType);
     const { user, err } = await supabase.auth.signUp({
       email,
       password,

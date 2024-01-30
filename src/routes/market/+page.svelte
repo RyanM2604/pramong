@@ -7,27 +7,31 @@
     const products : Product[] = [
         {
             id: "price_1OTGDiANL4FDLiXakHhrwKrn",
-            name: "Coffee",
+            name: "Catfish",
             price: 5,
-            info: "Brewed from the foothills of Doi Inthanon"
+            info: "From the foothills of Doi Inthanon",
+            photo_url: "/assets/catfish.png"
         },
         {
             id: "price_1OTGITANL4FDLiXa3jQyKfYt",
-            name: "Fish",
+            name: "Sea Bass",
             price: 10,
-            info: "Caught fresh from the seas of Pattaya"
+            info: "Caught fresh from the seas of Pattaya",
+            photo_url: "/assets/seabass.png"
         },
         {
             id: "price_1OTGJ6ANL4FDLiXaeZxPALEP",
             name: "Lobster",
             price: 50,
-            info: "Rivals those of Maine"
+            info: "Rivals those of Maine",
+            photo_url: "/assets/lobster.png"
         },
         {
             id: "price_1OTGMLANL4FDLiXatcYTl1GN",
-            name: "Shrimp",
+            name: "King Shrimp",
             price: 5,
-            info: "Fake lobster"
+            info: "Fake lobster",
+            photo_url: "/assets/shrimp.png"
         }
     ]
 
@@ -57,16 +61,22 @@
 
 {#if currentUser.name && currentUser.email && currentUser.userId}
     <div class="container justify-content-center" style="margin-top: 200px">
-        {#each Array.from({ length: Math.ceil(products.length / 3) }) as _, i}
-        <div class="row">
-            {#each {length : 3} as _, j}
-            <div class="col">
-            <ProductCard product = {products[i*3+j]}/>
-            </div>
+
+            {#each Array.from({ length: Math.ceil(products.length / 3) }) as _, i}
+                <div class="row mb-3">
+                    {#each Array.from({ length: 3 }) as _, j}
+                        {#if products[i * 3 + j]}
+                            <div class="col">
+                                <ProductCard product={products[i * 3 + j]}/>
+                            </div>
+                        {/if}
+                    {/each}
+                </div>
             {/each}
-        </div>
-        {/each}
-        <button class="btn btn-primary" on:click={() => checkout()}>Checkout</button>
+
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary text-center mb-5" on:click={() => checkout()}>Checkout</button>
+            </div>
     </div>
 {:else}
     <div style="margin-top: 200px">

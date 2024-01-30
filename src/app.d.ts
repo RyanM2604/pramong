@@ -14,6 +14,7 @@ declare global {
 		name: String
 		price: number
 		info: String
+		photo_url: String
 	}
 
 	declare class cartItem {
